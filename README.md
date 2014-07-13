@@ -8,8 +8,12 @@ Motivation
 
 Value Objects should always represent a valid instance of a value. While this is usually very easy, some problems may arise if you use value objects in your JSF Views. This example shows the usage of the Bean Validation Framework (JSR303) to prevent invalid objects and the handling of error messages.
 
-Why?
-----
+Look at [BeanValidator.java](https://github.com/poquito/ValueObjectValidation/blob/master/src/main/java/validation/model/BeanValidator.java) to see the validation code and [AbstractConverter.java](https://github.com/poquito/ValueObjectValidation/blob/master/src/main/java/validation/ui/AbstractConverter.java) to see the error message handling.
+
+
+
+Details
+-------
 
 To prevent non-valid Value Object instances, the Value Objects must check its constructor arguments. This is usually very easy. Let's look at the following example:
 
